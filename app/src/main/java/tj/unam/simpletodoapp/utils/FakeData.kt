@@ -1,6 +1,6 @@
 package tj.unam.simpletodoapp.utils
 
-import tj.unam.simpletodoapp.db.NoteEntity
+import tj.unam.simpletodoapp.data.local.db.NoteEntity
 import java.util.*
 
 object FakeData {

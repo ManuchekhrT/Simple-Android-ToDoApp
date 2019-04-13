@@ -1,4 +1,4 @@
-package tj.unam.simpletodoapp.ui
+package tj.unam.simpletodoapp.ui.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import kotlinx.android.synthetic.main.item_note_list.view.*
 import tj.unam.simpletodoapp.ui.editor.EditorActivity
 import tj.unam.simpletodoapp.R
-import tj.unam.simpletodoapp.db.NoteEntity
+import tj.unam.simpletodoapp.data.local.db.NoteEntity
 import tj.unam.simpletodoapp.utils.Constants
 
 class NotesAdapter(private val mNotes: MutableList<NoteEntity>, private var context: Context) :
@@ -29,7 +29,7 @@ class NotesAdapter(private val mNotes: MutableList<NoteEntity>, private var cont
 
     override fun getItemCount(): Int = mNotes.size
 
-    override fun onCreateViewHolder(parent: ViewGroup, p1: Int): NotesAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_note_list, parent, false)
         return ViewHolder(itemView)

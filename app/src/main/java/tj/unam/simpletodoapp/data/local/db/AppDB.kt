@@ -1,4 +1,4 @@
-package tj.unam.simpletodoapp.db
+package tj.unam.simpletodoapp.data.local.db
 
 import android.arch.persistence.room.Database
 import android.arch.persistence.room.Room
@@ -24,7 +24,8 @@ abstract class AppDB : RoomDatabase() {
                     if(instance == null) {
                         instance = Room.databaseBuilder(
                             context.applicationContext,
-                            AppDB::class.java, DB_NAME
+                            AppDB::class.java,
+                            DB_NAME
                         ).build()
                     }
                 }

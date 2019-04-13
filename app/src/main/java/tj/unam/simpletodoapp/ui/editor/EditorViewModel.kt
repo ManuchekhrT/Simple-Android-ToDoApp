@@ -4,8 +4,8 @@ import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.MutableLiveData
 import android.text.TextUtils
-import tj.unam.simpletodoapp.db.AppRepository
-import tj.unam.simpletodoapp.db.NoteEntity
+import tj.unam.simpletodoapp.data.repository.AppRepository
+import tj.unam.simpletodoapp.data.local.db.NoteEntity
 import java.util.*
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors

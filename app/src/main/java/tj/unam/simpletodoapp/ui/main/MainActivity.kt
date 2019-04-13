@@ -13,8 +13,8 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import tj.unam.simpletodoapp.R
-import tj.unam.simpletodoapp.db.NoteEntity
-import tj.unam.simpletodoapp.ui.NotesAdapter
+import tj.unam.simpletodoapp.data.local.db.NoteEntity
+import tj.unam.simpletodoapp.ui.adapter.NotesAdapter
 import tj.unam.simpletodoapp.ui.editor.EditorActivity
 
 class MainActivity : AppCompatActivity() {

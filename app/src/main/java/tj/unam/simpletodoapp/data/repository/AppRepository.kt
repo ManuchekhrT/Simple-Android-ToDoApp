@@ -1,8 +1,10 @@
-package tj.unam.simpletodoapp.db
+package tj.unam.simpletodoapp.data.repository
 
 import android.annotation.SuppressLint
 import android.arch.lifecycle.LiveData
 import android.content.Context
+import tj.unam.simpletodoapp.data.local.db.AppDB
+import tj.unam.simpletodoapp.data.local.db.NoteEntity
 import tj.unam.simpletodoapp.utils.FakeData
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors
@@ -23,7 +25,8 @@ class AppRepository(var context: Context) {
         private var instance: AppRepository? = null
         fun getInstance(context: Context): AppRepository {
             if (instance == null)
-                instance = AppRepository(context)
+                instance =
+                        AppRepository(context)
 
             return instance as AppRepository
         }

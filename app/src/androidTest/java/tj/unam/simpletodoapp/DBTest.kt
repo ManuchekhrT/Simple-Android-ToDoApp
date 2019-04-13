@@ -8,11 +8,11 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import tj.unam.simpletodoapp.db.AppDB
-import tj.unam.simpletodoapp.db.NoteDAO
+import tj.unam.simpletodoapp.data.local.db.AppDB
+import tj.unam.simpletodoapp.data.local.db.NoteDAO
 import tj.unam.simpletodoapp.utils.FakeData
 import org.junit.Assert.*
-import tj.unam.simpletodoapp.db.NoteEntity
+import tj.unam.simpletodoapp.data.local.db.NoteEntity
 
 @RunWith(AndroidJUnit4::class)
 class DBTest {

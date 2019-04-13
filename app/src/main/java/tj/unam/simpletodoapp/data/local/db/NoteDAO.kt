@@ -1,4 +1,4 @@
-package tj.unam.simpletodoapp.db
+package tj.unam.simpletodoapp.data.local.db
 
 import android.arch.lifecycle.LiveData
 import android.arch.persistence.room.*
